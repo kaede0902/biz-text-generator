@@ -35,11 +35,13 @@ export default function NameForm () {
         )
     }
     const output = () => {
-        <Box m={2}>
-            <Paper elevation={5}>
-                <h2>{state.hisCompany}, {state.hisName}, 様</h2>
-            </Paper>
-        </Box>
+        return (
+            <Box m={2}>
+                <Paper elevation={5}>
+                    <h2>{state.hisCompany}, {state.hisName}, 様</h2>
+                </Paper>
+            </Box>
+        )
     }
 
   return (
