@@ -71,13 +71,14 @@ export default function NameForm () {
         return (
             <Box m={2}>
                 <Paper elevation={5}>
-                    <h2>{state.hisCompany}, {state.hisName}, 様</h2>
-                    <h2>{state.myCompany}, {state.myName}, です</h2>
+                    <h2>{state.hisCompany} {state.hisName} 様</h2>
+                    <h2>{state.myCompany} {state.myName} です</h2>
                     <h2>{firstGreeding}</h2>
                     
                     <h2>{state.freeArea}</h2>
 
                     <h2>{finalGreeding}</h2>
+                    <h2>{state.myCompany} {state.myName}</h2>
                 </Paper>
             </Box>
         )
