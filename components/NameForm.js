@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Paper from '@material-ui/core/Paper';
 
 export default function NameForm () {
     const [state, setState] = useState({ 
@@ -26,7 +27,9 @@ export default function NameForm () {
                 onChange={handleChange}
                 name="hisName" // this is needed
             />
-            <h2>{state.hisCompany}, {state.hisName}, 様</h2>
+            <Paper elevation={5}>
+                <h2>{state.hisCompany}, {state.hisName}, 様</h2>
+            </Paper>
       </div>
   )
 }
